@@ -5,8 +5,14 @@ article {
   flex-direction: column;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
 .superheroImg {
-  max-width: 300px;
+  max-width: 100%;
   border: 2px solid pink;
   margin: 0;
 }

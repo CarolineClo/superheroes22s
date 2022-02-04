@@ -498,10 +498,11 @@ const superheroes = [
   },
 ];
 
-alert(
+/*alert(
   "1. Checking if JS file is linked up correctly. \n2. Always open the inspector/console when woorking with the JS \n3. Write your code in the end of the js-file \n4. Don't use alert boxes for UI... \n5. Delete this message or comment it out"
-);
-console.table(superheroes);
+);*/
+
+// console.table(superheroes);
 
 /* write your code here */
 
@@ -518,7 +519,11 @@ superheroes.forEach(showHero);
 function showHero(superhero) {
   const templateElement = document.querySelector("#theTemplate").content;
   const myClone = templateElement.cloneNode(true);
-  clone.querySelector(".superhero h2").textContent = superhero.name;
-  const parentElement = document.querySelector("main");
+  myClone.querySelector(".superhero h2").textContent = superhero.name;
+  myClone.querySelector(".lifePercent").textContent = superhero.lifePercentage;
+  myClone.querySelector(".powers").textContent = superhero.powers;
+  myClone.querySelector(".nemisis").textContent = superhero.primaryNemesis;
+  myClone.querySelector(".superheroImg").src = superhero.img;
+  const parentElement = document.querySelector("body");
   parentElement.appendChild(myClone);
 }
