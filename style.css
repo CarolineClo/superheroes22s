@@ -1,0 +1,12 @@
+article {
+  border: solid 2px red;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.superheroImg {
+  max-width: 300px;
+  border: 2px solid pink;
+  margin: 0;
+}

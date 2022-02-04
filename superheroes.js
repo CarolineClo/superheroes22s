@@ -504,3 +504,21 @@ alert(
 console.table(superheroes);
 
 /* write your code here */
+
+/*const templateElement = document.querySelector("#theTemplate").content;
+const myClone = templateElement.cloneNode(true);*/
+
+/*myClone.querySelector(".superhero h2").textContent = "another hero";*/
+
+/*const parentElement = document.querySelector("body");
+parentElement.appendChild(myClone);*/
+
+superheroes.forEach(showHero);
+
+function showHero(superhero) {
+  const templateElement = document.querySelector("#theTemplate").content;
+  const myClone = templateElement.cloneNode(true);
+  clone.querySelector(".superhero h2").textContent = superhero.name;
+  const parentElement = document.querySelector("main");
+  parentElement.appendChild(myClone);
+}
