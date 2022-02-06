@@ -16,3 +16,7 @@ body {
   border: 2px solid pink;
   margin: 0;
 }
+
+h1 {
+  grid-column: 1 / span 2;
+}
